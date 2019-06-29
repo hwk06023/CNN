@@ -1,5 +1,6 @@
 # CNN 등장 이전의 이미지 처리
 
+<br/>
 
 ## Multi Layered Neural Network
 CNN이 등장하기 전, 인공지능을 활용한 이미지처리는 최대한 이미지를 적게 사용하면서,  
@@ -16,6 +17,7 @@ Fully-Connected Multi Layered Neural Network 구조로 학습을 했었습니다
 
 그래서 당시 인공지능 학자들은 새로운 이미지 처리 방식을 연구하기 시작합니다.
 
+<br/>
 
 ## 수용 영역(Receptive field)
 당시 인공지능을 활용한 이미지 처리에 대해 공부하고, 새로운 이미지 처리 방식을 연구하던 인공지능 학자들 중,  
@@ -33,9 +35,9 @@ Fully-Connected Multi Layered Neural Network 구조로 학습을 했었습니다
 가장 처음 이러한 형태를 띈 것은 아래 사진의 1989년 Y.LeCun 박사의  
 'Backpropagation Applied to Handwritten Zip Code Recognition'에서 소개 되었고,  
 
-
 ![Backpropagation Applied to Handwritten Zip Code Recognition](https://github.com/hwk06023/CNN/blob/master/Image_CNN/Backpropagation%20Applied%20to%20Handwritten%20Zip%20Code%20Recognition.png)
 
+<br/>
 
 우리가 흔히 공부하는 CNN의 기초가 되는 모델은 1998년 Y.LeCun 박사의  
 Gradient-Based Learning Applied to Document Recognition에서 소개된 LeNet-5입니다.
@@ -44,11 +46,11 @@ Gradient-Based Learning Applied to Document Recognition에서 소개된 LeNet-5�
 ![Gradient-Based Learning Applied to Document Recognition](https://github.com/hwk06023/CNN/blob/master/Image_CNN/Gradient-Based%20Learning%20Applied%20to%20Document%20Recognition.png)  
 위 사진은 Gradient-Based Learning Applied to Document Recognition에서 소개된 LeNet-5의 구조입니다.
 
-
+<br/>
 
 ---
 
-
+<br/>
 
 # CNN (Convolutional Neural Network)
 인간의 수용영역에서 아이디어를 얻어 만들어진 CNN은 적은 데이터로 적당한 크기의 신경망에 높은 정확도를 보여주며,  
@@ -66,39 +68,50 @@ Gradient-Based Learning Applied to Document Recognition에서 소개된 LeNet-5�
 다른 곳에 많이 응용, 활용되는 부분인 Convolutional Layer과 Pooling Layer(Subsampling)을 중심으로  
 각 Layer에서 적용되는 연산과 적용되는 연산의 방법을 정리해보도록 하겠습니다.  
 
+<br/>
 
 ## Convolutional Layer
 Convolutional Layer는 Convolutional 연산을 거치는 층으로써,  
 Convolutional 연산에 쓰이는 용어를 알아본 후, 연산 방법을 알아봅시다.  
 
+<br/>
 
 ### Convolutional filter (Kernel)
 ![Convolutional filter](https://github.com/hwk06023/CNN/blob/master/Image_CNN/Convolutional%20filter.png)  
 Input image에 적용하여 연산할 때 사용되는 필터이다.  
 
+<br/>
 
 ### Stride
 ![Stride](https://github.com/hwk06023/CNN/blob/master/Image_CNN/Stride.png)  
 Convolutional filter가 Input image에 적용될 때의 이동 수를 말합니다.  
 
+<br/>
+
 ### Padding
 ![Padding](https://github.com/hwk06023/CNN/blob/master/Image_CNN/Padding.png)  
 Input image가 Convolutional 연산을 거치며, 크기가 줄면서 Feature를 잃는 것을 방지해줍니다.  
 
+<br/>
 
 ### Convolutional Operation
 ![Convolutional Operation_input](https://github.com/hwk06023/CNN/blob/master/Image_CNN/Convolutional%20Operation_input.png)  
 먼저 위와 같이 Input image을 행렬로 나타내 줍니다.  
+
+<br/>
 
 ![Convolutional Operation_filter](https://github.com/hwk06023/CNN/blob/master/Image_CNN/Convolutional%20Operation_filter.png)  
 Convolutional filter는 위의 Input image의 행렬과 차원 수는 동일하지만 모양이 더 작은 행렬로,  
 사진 조작에 사용될 때는 일반적으로 1과 0으로 구성된 일정한 패턴으로 설정되지만,  
 Machine Learning에서 Convolutional filter는 일반적으로 일정 범위 내의 무작위 값으로 채워지며 네트워크가 이상적인 값을 학습시킵니다.  
 
+<br/>
+
 ![Convolutional Operation](https://github.com/hwk06023/CNN/blob/master/Image_CNN/Convolutional%20Operation.png)  
 다음 과 같이, Input image의 왼쪽 위부터 stride만큼 이동하며 곱셈을 적용해줘 나온 행렬 내의 모든 값의 합계로  
 feature map 을 만드는 과정을 Convolutional 연산이라고 합니다.  
 
+<br/>
 
 ## Pooling Layer
 Pooling Layer는 SubSampling, DownSampling이라고 불리기도 하며, 이에서 해주는 Pooling은  
