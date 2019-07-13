@@ -27,4 +27,4 @@ CNN 등장 이전의 이미지 처리 ~ 기초 설명
 
 <br/><br/><br/><br/><br/>
 
-#### Everything about CNN &#128526;
+#### All about CNN &#128526;
