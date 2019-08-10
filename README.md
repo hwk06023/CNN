@@ -21,9 +21,14 @@ CNN 등장 이전의 이미지 처리 ~ 기초 설명
 
 ## 코드 설명 &#128195;
 
+업데이트 중...
+
 <br/>
 
-(To be continued)
+## MNIST
+MNIST는 손으로 쓴 숫자 0~9이 있는 28 x 28px의 흑백이미지입니다.
+
+### [Tensorflow](https://github.com/hwk06023/CNN/blob/master/MNIST_Tensorflow.py)
 
 <br/><br/><br/><br/><br/>
 
