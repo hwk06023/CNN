@@ -40,10 +40,10 @@ CNN 등장 이전의 이미지 처리 ~ 기초 설명
 코드를 보면서 잘 모르겠는 부분은 찾아서 공부해보세요!
 <br/><br/>
 
-#### [Tensorflow](https://www.tensorflow.org/tutorials/)
-<br/>
-#### [Keras](https://keras.io)
-<br/>
+#### [Tensorflow](https://www.tensorflow.org/tutorials/) <br/>
+
+#### [Keras](https://keras.io) <br/>
+
 #### [pyTorch](https://pytorch.org/tutorials/#getting-started})
 <br/><br/>
 
