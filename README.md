@@ -35,18 +35,15 @@ CNN 등장 이전의 이미지 처리 ~ 기초 설명
 
 <br/><br/><br/><br/><br/>
 
-### 참조
-<br/>
+## 참조
 공부할 때 분명 도움이 될 겁니다!<br/>
 코드를 보면서 잘 모르겠는 부분은 찾아서 공부해보세요!
 <br/><br/>
 
 #### [Tensorflow](https://www.tensorflow.org/tutorials/)
 <br/>
-
 #### [Keras](https://keras.io)
 <br/>
-
 #### [pyTorch](https://pytorch.org/tutorials/#getting-started})
 <br/><br/>
 
